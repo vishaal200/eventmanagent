@@ -1,0 +1,48 @@
+.edit-event-container {
+  max-width: 600px;
+   text-align: center;
+  
+}
+
+.edit-event-container h2 {
+  margin-bottom: 20px;
+  
+ 
+}
+
+.edit-event-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  
+  
+
+}
+
+.edit-event-container input,
+.edit-event-container textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width:300px;
+}
+
+.edit-event-container button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-event-container button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size:15px;
+}

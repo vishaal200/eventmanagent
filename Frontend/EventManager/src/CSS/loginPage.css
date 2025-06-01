@@ -1,0 +1,127 @@
+/* Base Styles */
+body {
+  background-color: #f2f6fc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px;
+  color: #000;
+}
+
+/* Container */
+.container {
+  max-width: 400px;
+  width: 90%;
+  margin: 40px auto;
+  padding: 40px 30px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Input Fields */
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="submit"] {
+  width: 300px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #cbcbcb31;
+  color: #000;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border-color: #000;
+  background-color: #cbcbcba6;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background-color: #0066cc;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #66afe9;
+}
+
+/* Headers and Labels */
+#loginHeader {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.app-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Links */
+a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #343434;
+  text-decoration: none;
+}
+
+/* Radio Button */
+input[type="radio"]:checked {
+  accent-color: #161616;
+}
+
+/* Span (Error messages, etc.) */
+span {
+  color: rgb(239, 34, 34);
+  font-size: 12px;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  .app-title {
+    font-size: 1.5rem;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"],
+  input[type="submit"] {
+    width: 100%;
+  }
+
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="text"]:focus {
+    width: 100%;
+  }
+}
